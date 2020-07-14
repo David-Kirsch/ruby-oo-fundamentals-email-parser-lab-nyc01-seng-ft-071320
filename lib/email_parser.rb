@@ -15,6 +15,7 @@ class EmailAddressParser
        # combine the arrays back into a string
        email = email.join()
        #seperate each email by space (to get rid of whitespaces). Store as array
+       # get rid of any duplicates (uniq)
        email = email.split(" ").uniq
     end
 
